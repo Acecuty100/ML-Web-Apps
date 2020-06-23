@@ -35,22 +35,22 @@ def user_input_features():
      #'CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX',
     #   'PTRATIO', 'B', 'LSTAT', 'PRICE'
     
-    data = {'CRIM': crim,
-            'ZN': zn,
-            'INDUS': indus,
-            'CHAS': chas,
-            'NOX': nox,
-            'RM': rm,
-            'AGE': age,
-            'DIS': dis,
-            'RAD': rad,
-            'TAX': tax,
-            'PTRATIO': ptratio,
-            'B': b,
-            'LSTAT': lstat,
+    data = {'CRIM': np.sqrt(crim),
+            'ZN': np.sqrt(zn),
+            'INDUS': np.sqrt(indus),
+            'CHAS': np.sqrt(chas),
+            'NOX': np.sqrt(nox),
+            'RM': np.sqrt(rm),
+            'AGE': np.sqrt(age),
+            'DIS': np.sqrt(dis),
+            'RAD': np.sqrt(rad),
+            'TAX': np.sqrt(tax),
+            'PTRATIO': np.sqrt(ptratio),
+            'B': np.sqrt(b),
+            'LSTAT': np.sqrt(lstat)
            
            }
-    features = pd.DataFrame(np.sqrt(data), index=[0])
+    features = pd.DataFrame(data, index=[0])
     return features
 
 df = user_input_features()
