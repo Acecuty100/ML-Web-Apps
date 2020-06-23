@@ -60,9 +60,9 @@ st.write(df)
 
 
 boston = load_boston()
-df=pd.DataFrame(data=boston.data, columns= boston.features_names)
-df['PRICE'] = boston.target
-X = np.sqrt(df.copy())
+df1=pd.DataFrame(data=boston.data, columns= boston.features_names)
+df1['PRICE'] = boston.target
+X = np.sqrt(df1.copy())
 Y = X.pop('PRICE')
 
 lm = LinearRegression()
