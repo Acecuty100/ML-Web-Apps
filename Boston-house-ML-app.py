@@ -22,7 +22,7 @@ def user_input_features():
     
     nox = st.sidebar.slider('NOX', 4.3, 7.9, 5.4)
     rm = st.sidebar.slider('RM', 2.0, 4.4, 3.4)
-    age = st.sidebar.slider('AGE', 1.0, 50, 100)
+    age = st.sidebar.slider('AGE', 1, 50, 100)
     dis = st.sidebar.slider('DIS', 0.1, 2.5, 0.2)
     
     rad = st.sidebar.slider('RAD', 4.3, 7.9, 5.4)
