@@ -7,6 +7,7 @@ from sklearn.linear_model import LinearRegression
 st.write("""
 # Simple Boston House Price Prediction App
 This app predicts the **Boston House Price** type!
+Created by **SONIA LASKAR**
 """)
 
 st.sidebar.header('User Input Parameters')
@@ -15,22 +16,22 @@ def user_input_features():
     #'CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX',
     #   'PTRATIO', 'B', 'LSTAT', 'PRICE'
         
-    crim = st.sidebar.slider('CRIM', 0.0, 89.0, 44.0)
-    zn = st.sidebar.slider('ZN', 0.0, 100.0, 50.0)
-    indus = st.sidebar.slider('INDUS', 0.46, 28.0, 14.0)
+    crim = st.sidebar.slider('CRIM', 0.0, 89.0, 0.00632)
+    zn = st.sidebar.slider('ZN', 0.0, 100.0, 18.0)
+    indus = st.sidebar.slider('INDUS', 0.46, 28.0, 2.31)
     chas = st.sidebar.slider('CHAS', 0, 1, 0)
     
-    nox = st.sidebar.slider('NOX', 0.3, 0.88, 0.44)
-    rm = st.sidebar.slider('RM', 3.56, 8.78, 4.0)
-    age = st.sidebar.slider('AGE', 1, 100, 50)
-    dis = st.sidebar.slider('DIS', 1.12, 12.12, 6.0)
+    nox = st.sidebar.slider('NOX', 0.3, 0.88, 0.538)
+    rm = st.sidebar.slider('RM', 3.56, 8.78, 6.575)
+    age = st.sidebar.slider('AGE', 1.0, 100.0, 65.2)
+    dis = st.sidebar.slider('DIS', 1.12, 12.12, 4.09)
     
-    rad = st.sidebar.slider('RAD', 1.0, 24.0, 12.0)
-    tax = st.sidebar.slider('TAX', 187.0, 711.0, 300.0)
-    ptratio = st.sidebar.slider('PTRATIO', 12.0, 22.0, 18.0)
-    b = st.sidebar.slider('B', 0.3, 399.0, 5.0)
+    rad = st.sidebar.slider('RAD', 1.0, 24.0, 1.0)
+    tax = st.sidebar.slider('TAX', 187.0, 711.0, 296.0)
+    ptratio = st.sidebar.slider('PTRATIO', 12.0, 22.0, 15.3)
+    b = st.sidebar.slider('B', 0.3, 399.0, 396.9)
     
-    lstat = st.sidebar.slider('LSTAT', 1.73, 40.0, 5.0)
+    lstat = st.sidebar.slider('LSTAT', 1.73, 40.0, 4.98)
     
      #'CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX',
     #   'PTRATIO', 'B', 'LSTAT', 'PRICE'
@@ -69,16 +70,14 @@ lm = LinearRegression()
 lm.fit(X, Y)
 
 prediction = lm.predict(df)
+pred = pred**2
 
 #st.subheader('Class labels and their corresponding index number')
 #st.write(iris.target_names)
 
 st.subheader('Prediction')
 #st.write(iris.target_names[prediction])
-st.write(prediction)
-
-#st.subheader('Prediction Probability')
-#st.write(prediction_proba)
+st.write(pred)
 
 
 
