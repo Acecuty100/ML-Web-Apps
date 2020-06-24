@@ -70,7 +70,7 @@ lm = LinearRegression()
 lm.fit(X, Y)
 
 prediction = lm.predict(df)
-pred = pred**2
+pred = prediction**2
 
 #st.subheader('Class labels and their corresponding index number')
 #st.write(iris.target_names)
