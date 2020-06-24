@@ -15,22 +15,22 @@ def user_input_features():
     #'CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX',
     #   'PTRATIO', 'B', 'LSTAT', 'PRICE'
         
-    crim = st.sidebar.slider('CRIM', 4.3, 7.9, 5.4)
-    zn = st.sidebar.slider('ZN', 2.0, 4.4, 3.4)
-    indus = st.sidebar.slider('INDUS', 1.0, 6.9, 1.3)
-    chas = st.sidebar.slider('CHAS', 0.1, 2.5, 0.2)
+    crim = st.sidebar.slider('CRIM', 0.0, 89.0, 44.0)
+    zn = st.sidebar.slider('ZN', 0.0, 100.0, 50.0)
+    indus = st.sidebar.slider('INDUS', 0.46, 28.0, 14.0)
+    chas = st.sidebar.slider('CHAS', 0, 1, 0)
     
-    nox = st.sidebar.slider('NOX', 4.3, 7.9, 5.4)
-    rm = st.sidebar.slider('RM', 2.0, 4.4, 3.4)
+    nox = st.sidebar.slider('NOX', 0.3, 0.88, 0.44)
+    rm = st.sidebar.slider('RM', 3.56, 8.78, 4.0)
     age = st.sidebar.slider('AGE', 1, 100, 50)
-    dis = st.sidebar.slider('DIS', 0.1, 2.5, 0.2)
+    dis = st.sidebar.slider('DIS', 1.12, 12.12, 6.0)
     
-    rad = st.sidebar.slider('RAD', 4.3, 7.9, 5.4)
-    tax = st.sidebar.slider('TAX', 2.0, 4.4, 3.4)
-    ptratio = st.sidebar.slider('PTRATIO', 1.0, 6.9, 1.3)
-    b = st.sidebar.slider('B', 0.1, 2.5, 0.2)
+    rad = st.sidebar.slider('RAD', 1.0, 24.0, 12.0)
+    tax = st.sidebar.slider('TAX', 187.0, 711.0, 300.0)
+    ptratio = st.sidebar.slider('PTRATIO', 12.0, 22.0, 18.0)
+    b = st.sidebar.slider('B', 0.3, 399.0, 5)
     
-    lstat = st.sidebar.slider('LSTAT', 1.0, 6.9, 1.3)
+    lstat = st.sidebar.slider('LSTAT', 1.73, 40.0, 5.0)
     
      #'CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX',
     #   'PTRATIO', 'B', 'LSTAT', 'PRICE'
