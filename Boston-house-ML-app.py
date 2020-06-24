@@ -60,7 +60,7 @@ st.write(df)
 
 
 boston = load_boston()
-df1=pd.DataFrame(data=boston.data, columns= boston.features_names)
+df1=pd.DataFrame(data=boston.data, columns= boston.feature_names)
 df1['PRICE'] = boston.target
 X = np.sqrt(df1.copy())
 Y = X.pop('PRICE')
