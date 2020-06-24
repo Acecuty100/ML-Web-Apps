@@ -28,7 +28,7 @@ def user_input_features():
     rad = st.sidebar.slider('RAD', 1.0, 24.0, 12.0)
     tax = st.sidebar.slider('TAX', 187.0, 711.0, 300.0)
     ptratio = st.sidebar.slider('PTRATIO', 12.0, 22.0, 18.0)
-    b = st.sidebar.slider('B', 0.3, 399.0, 5)
+    b = st.sidebar.slider('B', 0.3, 399.0, 5.0)
     
     lstat = st.sidebar.slider('LSTAT', 1.73, 40.0, 5.0)
     
