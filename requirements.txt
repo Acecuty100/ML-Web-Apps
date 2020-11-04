@@ -1,0 +1,5 @@
+streamlit
+numpy
+pandas
+sklearn.datasets
+sklearn.linear_model
